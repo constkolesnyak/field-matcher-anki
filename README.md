@@ -17,7 +17,7 @@ It's a zip archive created by running:
 
 ### My Use Case
 
-I batch mine cards with Migaku and sort them with AnkiMorphs to get `i+1` sentences.
+I batch mine cards with Migaku and sort them with AnkiMorphs to get `i+1`-sentences.
 I keep Migaku's word (because of human audio) and match it to AnkiMorphs's `+1`-lemma:
 
 <img src='my_settings.png' width='400'>
