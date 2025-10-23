@@ -13,7 +13,7 @@ It's a zip archive created by running:
 
 1. In Anki, open `Tools → Match (Un)equal Fields`.
 2. Enter the field names, optional search filter, desired match mode, and the tag to apply.
-3. Click OK.
+3. Click `OK`.
 
 ### My Use Case
 
