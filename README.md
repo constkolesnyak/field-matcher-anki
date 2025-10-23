@@ -1,2 +1,3 @@
-# anki-field-matcher
-Tag Anki cards with 2 equal fields.
+# Anki Field Matcher
+
+Tag Anki cards with 2 (un)equal fields.
