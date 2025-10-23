@@ -22,8 +22,6 @@ I keep Migaku's word (because of human audio) and match it to AnkiMorphs's `+1`-
 
    <img src='media/fm_settings.png' width='400'>
 
-<br>
-
-Tagged cards are excluded:
+Tagged cards are excluded (and then removed):
 
    <img src='media/am_settings.png' width='800'>
