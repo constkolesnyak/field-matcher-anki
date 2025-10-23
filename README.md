@@ -1,6 +1,6 @@
 # Field Matcher
 
-Tag cards than have two (un)equal fields.
+Tag cards that have two (un)equal fields.
 
 ## Install
 
