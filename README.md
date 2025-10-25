@@ -15,13 +15,6 @@ It's a zip archive created by running:
 2. Enter the field names, optional search filter, desired match mode, and the tag to apply.
 3. Click `OK`.
 
-### My Use Case
+### Example
 
-I batch mine cards with Migaku and sort them with AnkiMorphs to get `i+1`-sentences.
-I match Migaku's lemma and AnkiMorphs's `+1`-lemma:
-
-   <img src='media/fm_settings.png' width='400'>
-
-Unmatched lemmas are excluded (and then removed):
-
-   <img src='media/am_settings.png' width='800'>
+<img src='media/fm_settings.png' width='400'>
