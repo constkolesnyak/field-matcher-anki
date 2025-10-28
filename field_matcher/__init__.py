@@ -212,10 +212,37 @@ def tag_matching_notes(config: Config) -> tuple[int, int]:
     return tagged_count, skipped_count
 
 
+_ACTION_LABEL = 'Match (Un)equal Fields'
+_action: QAction | None = None
+
+
 def add_to_menu() -> None:
-    action = QAction('Match (Un)equal Fields', mw)
-    action.triggered.connect(anki_field_matcher)
-    mw.form.menuTools.addAction(action)
+    global _action
+
+    if not getattr(mw, 'form', None):
+        return
+
+    menu = getattr(mw.form, 'menuTools', None)
+    if menu is None:
+        return
+
+    if _action and _action in menu.actions():
+        menu.removeAction(_action)
+        _action.deleteLater()
+        _action = None
+    else:
+        for existing in menu.actions():
+            if existing.text() == _ACTION_LABEL:
+                menu.removeAction(existing)
+                existing.deleteLater()
+                break
+
+    _action = QAction(_ACTION_LABEL, mw)
+    _action.triggered.connect(anki_field_matcher)
+    menu.addAction(_action)
 
 
 gui_hooks.main_window_did_init.append(add_to_menu)
+
+if getattr(mw, 'form', None):
+    add_to_menu()
